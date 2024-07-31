@@ -22,7 +22,25 @@ export default defineNuxtConfig({
           type: 'image/x-icon',
           href: '/favicon.icon',
         },
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+          crossorigin: '',
+        },
+      ],
+      script:[
+        {
+          src:'https://code.jquery.com/jquery-3.7.1.js',
+          type:'text/javascript'
+        },
+        {
+          src:'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+          type:'text/javascript'
+        },
       ]
     },
   },
+  generate:{
+    fallback:true
+  }
 })
